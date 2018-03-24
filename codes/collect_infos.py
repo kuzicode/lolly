@@ -10,7 +10,7 @@ def take_picture(camera,name):
 def satisfaction_of_image(path):
     #'preview the picture and quit'
     
-    print('look at the picture and take a picture again if you are not satisfy') 
+    print('请查看你拍的照片，核对是否满意') 
     from PIL import Image
     import subprocess
     
@@ -20,7 +20,7 @@ def satisfaction_of_image(path):
 
 def main(camera,name):
 	name='%s.jpg'%name
-	print('read to take a picture,pay attention please')
+	print('即将在3秒后进行拍照，请注意')
 	time.sleep(3)
 	take_picture(camera,name)
 
