@@ -20,7 +20,7 @@
 
 4.but i get stuck in situation that i can not open the picture on command line,fortunately,i fix it after i installed the "imagemagick" package by run the command "sudo apt install imagemagick "
 
-5.now i need to shutdown the image after i open it
+5.now i need to closed the image after i open it
 
 ###2018.3.24###
 
