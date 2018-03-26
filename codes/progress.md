@@ -25,7 +25,7 @@
 ###2018.3.24###
 
 需要解决的问题是：
-1.树莓派摄像头是排线摄像头，opencv库无法进入摄像头的问题
+1.树莓派摄像头是排线摄像头，opencv库无法进为入摄像头的问题
 2.vncview登陆无法显示视频，所有只能用3.5寸的屏幕来显示，先安装驱动，教程链接(http://kookye.com/2017/01/18/install-3-5-hdmi-touch-screen-linux-driver-on-raspberry-pi/)
 3.u盘无法在树莓派上使用的问题
 
