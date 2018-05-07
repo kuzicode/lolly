@@ -1,10 +1,13 @@
+#!/usr/bin/python3
+# _*_ coding:UTF-8 _*_
+
 import face_recognition
 import picamera
 import numpy as np
 from collect_infos import *
 
 camera=picamera.PiCamera()
-person_name=input('请输入你的名字')
+person_name=input('enter your name please!')
 main(camera,person_name)
 
 camera.resolution = (320, 240)
@@ -14,7 +17,10 @@ output = np.empty((240, 320, 3), dtype=np.uint8)
 print("Loading known face image(s)")
 
 image = face_recognition.load_image_file("%s.jpg"%person_name)
-face_encoding = face_recognition.face_encodings(obama_image)[0]
+try:
+	face_encoding = face_recognition.face_encodings(image)[0]
+except:
+	print('list index out of range')
 
 #初始化一些参数
 face_locations = []
@@ -35,7 +41,7 @@ while True:
     # Loop over each face found in the frame to see if it's someone we know.
     for face_encoding in face_encodings:
         # See if the face is a match for the known face(s)
-        match = face_recognition.compare_faces([obama_face_encoding], face_encoding)
+        match = face_recognition.compare_faces([face_encoding], face_encoding)
         name = "<Unknown Person>"
 
         if match[0]:
