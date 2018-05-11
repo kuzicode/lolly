@@ -18,7 +18,7 @@ def satisfaction_of_image(path):
     time.sleep(3)
     p.kill()
 
-def main(camera,name):
+def collect_infos(camera,name):
 	name='%s.jpg'%name
 	print('即将在3秒后进行拍照，请注意')
 	time.sleep(3)
@@ -35,4 +35,4 @@ def main(camera,name):
 
 
 if __name__=="__main__":
-    main()
+    collect_infos()
