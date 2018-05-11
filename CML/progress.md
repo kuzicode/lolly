@@ -30,24 +30,19 @@
 3.u盘无法在树莓派上使用的问题
 
 ###2018.3.25###
+树莓派摄像头是排线摄像头，opencv库无法进入摄像头的问题
+https://thinkrpi.wordpress.com/2013/05/22/opencv-and-camera-board-csi/
+
+pip安装Opencv问题：
+https://pypi.python.org/pypi/opencv-python
+
+实时人脸识别：
+https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826
+
+安装Opencv3
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
 
 
-###2018.3.27###
-想要设计一个图形用户界面，python中有一些图形界面的库，如pyQt、wxpython.
-如果想设计一个优秀的图形界面得用pyQt,但是想先用wxpython设计出一个简单的来用用
-
-问题：
-1.要解决图形界面中显示视频流的问题。
-
-https://www.jianshu.com/p/8f4ee3de02e6
-
-
-
-###2018.3.28###
-要做的事：
-1.了解GUI生成器    ----已初步了解GUI生成器的工作流程
-2.熟悉wxpython库
-3.初步了解Opencv库
 
 

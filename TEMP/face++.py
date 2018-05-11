@@ -3,20 +3,20 @@
 '''
 import requests
 
-def face_recognition(pic_1,pic_2):
-	'''
-	上传本地的两个图片，用于识别是否是同一个人(人脸识别)
-	:pic_1,pic_2: local picture path
-	:rtype:json
-	'''
-	url='https://api-cn.faceplusplus.com/facepp/v3/compare'
+# def face_recognition(pic_1,pic_2):
+# 	'''
+# 	上传本地的两个图片，用于识别是否是同一个人(人脸识别)
+# 	:pic_1,pic_2: local picture path
+# 	:rtype:json
+# 	'''
+# 	url='https://api-cn.faceplusplus.com/facepp/v3/compare'
 	
-	data={
-		'api_key':'ku-OGYH-G5ohgFtogUbox5rT0RHtNJK6',
-		'api_secret':'ZGmzUzNJPDUP-J4UDmr4JEnq89h6zxSI'}	
-	files={'image_file1':open(pic_1,'rb'),'image_file2':open(pic_2,'rb')}
+# 	data={
+# 		'api_key':'ku-OGYH-G5ohgFtogUbox5rT0RHtNJK6',
+# 		'api_secret':'ZGmzUzNJPDUP-J4UDmr4JEnq89h6zxSI'}	
+# 	files={'image_file1':open(pic_1,'rb'),'image_file2':open(pic_2,'rb')}
 
-	print(requests.post(url,data=data,files=files).text)
+# 	print(requests.post(url,data=data,files=files).text)
 
 def face_recognition_online(url_1,url_2):
 	'''
@@ -31,6 +31,32 @@ def face_recognition_online(url_1,url_2):
 		}
 	print(requests.post(url,data=data).text)
 
+def face_recognition(pic_1,pic_2):
+	'''
+	上传本地的两个图片，用于识别是否是同一个人(人脸识别)
+	:pic_1,pic_2: local picture path
+	:rtype:json
+	'''
+	url='https://api-cn.faceplusplus.com/facepp/v3/compare'
+	
+	data={
+		'api_key':'ku-OGYH-G5ohgFtogUbox5rT0RHtNJK6',
+		'api_secret':'ZGmzUzNJPDUP-J4UDmr4JEnq89h6zxSI'}	
+	files={'image_file1':open(pic_1,'rb'),'image_file2':open(pic_2,'rb')}
+
+	r=requests.post(url,data=data,files=files)
+	# print(msg)
+	if r.status_code == requests.codes.ok:
+		# print(r.json()['confidence'])
+		return r.json()['confidence']
+	else:
+		return 'something wrong and status_code is %s'%r.status_code
+
+
+	
+
+
+
 if __name__ == '__main__':
 	# face_recognition('e:/1.jpg','e:/2.jpg')
 	url1='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519388599421&di=c56873a9a3054b3d964d5f4a77f6835e&imgtype=0&src=http%3A%2F%2Fp8.qhimg.com%2Ft01d5fe9c95c53e0a23.jpg'
@@ -38,5 +64,5 @@ if __name__ == '__main__':
 
 	# face_recognition_online(url1,url2)
 	img1='1.jpg'
-	img2='6.jpg'
+	img2='2.jpg'
 	face_recognition(img1,img2)
