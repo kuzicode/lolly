@@ -26,9 +26,6 @@
 2.vncview登陆无法显示视频，所有只能用3.5寸的屏幕来显示，先安装驱动，教程链接(http://kookye.com/2017/01/18/install-3-5-hdmi-touch-screen-linux-driver-on-raspberry-pi/)
 3.u盘无法在树莓派上使用的问题
 
-###2018.3.25###
-
-
 
 ###2018.3.27###
 想要设计一个图形用户界面，python中有一些图形界面的库，如pyQt、wxpython.
@@ -40,8 +37,7 @@
 https://www.jianshu.com/p/8f4ee3de02e6
 
 
-
-###2018.3.28###
+###2018.3.28###  
 要做的事：
 1.了解GUI生成器    ----已初步了解GUI生成器的工作流程
 2.熟悉wxpython库
