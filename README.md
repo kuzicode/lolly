@@ -7,7 +7,7 @@ Composition： raspberrypi + dlib + python
 2.系统正式开始----从摄像头截取一张照片，与已存在人脸对比  
 
 ### Environmental construction
-[环境搭建/raspi配件安装指南](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
+[raspi环境搭建过程](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
 
 ### Run
 $ cd CML/  
