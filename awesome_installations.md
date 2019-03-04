@@ -1,6 +1,9 @@
 ssr:
 https://dcamero.azurewebsites.net/shadowsocksr.html#linux
 
+官方摄像头使用教程  
+https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/6  
+
 树莓派摄像头是排线摄像头，opencv库无法进入摄像头的问题
 https://thinkrpi.wordpress.com/2013/05/22/opencv-and-camera-board-csi/
 
