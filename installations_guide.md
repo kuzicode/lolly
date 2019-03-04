@@ -1,6 +1,6 @@
-face_recognition官方库raspberryPi安装流程
-https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65
-遇到的坑：need add "sudo apt-get install libatlas-base-dev"
+face_recognition官方库raspberryPi安装流程  
+https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65  
+tips: need add "sudo apt-get install libatlas-base-dev"  
 
 3.5寸LCD屏幕驱动安装  
 http://www.raspigeek.com/index.php?c=read&id=79&page=1  
