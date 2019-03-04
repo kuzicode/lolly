@@ -1,6 +1,9 @@
 ssr:
 https://dcamero.azurewebsites.net/shadowsocksr.html#linux
 
+3.5寸LCD屏幕驱动安装  
+http://www.raspigeek.com/index.php?c=read&id=79&page=1  
+
 摄像头官方使用教程  
 https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/6  
 
