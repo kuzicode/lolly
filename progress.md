@@ -16,6 +16,7 @@
 5.now i need to closed the image after i open it
 
 ###2018.3.24###  
+
 需要解决的问题是：
 
 1.树莓派摄像头是排线摄像头，opencv库无法进为入摄像头的问题
@@ -25,6 +26,7 @@ screen-linux-driver-on-raspberry-pi/)
 
 
 ###2018.3.27###  
+
 想要设计一个图形用户界面，python中有一些图形界面的库，如pyQt、wxpython.
 如果想设计一个优秀的图形界面得用pyQt,但是想先用wxpython设计出一个简单的来用用
 
@@ -35,6 +37,7 @@ https://www.jianshu.com/p/8f4ee3de02e6
 
 
 ###2018.3.28###  
+
 要做的事：
 1.了解GUI生成器    ----已初步了解GUI生成器的工作流程
 2.熟悉wxpython库
