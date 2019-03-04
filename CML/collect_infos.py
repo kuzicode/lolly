@@ -7,10 +7,10 @@ def take_picture(camera,name):
 	camera.capture(name)
 	camera.stop_preview()
 
+
 def satisfaction_of_image(path):
     #'preview the picture and quit'
-    
-    print('请查看你拍的照片，核对是否满意') 
+    print('Please check the photos you took to check if you are satisfied.') 
     from PIL import Image
     import subprocess
     
@@ -18,19 +18,20 @@ def satisfaction_of_image(path):
     time.sleep(3)
     p.kill()
 
-def collect_infos(camera,name):
-	name='%s.jpg'%name
-	print('即将在3秒后进行拍照，请注意')
+
+def collect_infos(camera, name):
+	name = '%s.jpg' % name
+	print('Take a photo after 3 seconds ...')
 	time.sleep(3)
-	take_picture(camera,name)
+	take_picture(camera, name)
 
 	while True:      
             satisfaction_of_image(name)
-            i=input('是否对拍的图片感到满意,输入 y 进入下一步，或 n 进行重拍...y/n')
+            i=input('Satisfied with the picture taken, enter "y" to the next step, or "n" to retake ...y/n ')
             if i=='n':
-                    take_picture(camera,name)
+                    take_picture(camera, name)
             else:
-                print('end')
+                print('Done, end of photo.')
                 break
 
 

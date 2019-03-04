@@ -3,36 +3,35 @@ import picamera
 import numpy as np
 from collect_infos import *
 
-camera=picamera.PiCamera()
-person_name=input('请输入你的名字')
+camera = picamera.PiCamera()
+person_name = input('Please input your name: ')
 
-collect_infos(camera,person_name)
+collect_infos(camera, person_name)
 
 camera.resolution = (320, 240)
-output = np.empty((240, 320, 3), dtype=np.uint8)
+output = np.empty((240, 320, 3), dtype = np.uint8)
 
-#加载已知人名的图片
+# Loading known face
 print("Loading known face image(s)")
 
-image = face_recognition.load_image_file("%s.jpg"%person_name)
+image = face_recognition.load_image_file("%s.jpg" % person_name)
 try:
     face_encoding = face_recognition.face_encodings(image)[0]
-
-    #初始化一些参数
+    # parameters init
     face_locations = []
     face_encodings = []
 
     while True:
         print("Capturing image.")
-        #从树莓派摄像头中抓取一帧图片，作为numpy的数组
+        # get frame data from raspi camera as numpy array
         camera.capture(output, format="rgb")
 
-        #找出当前帧数中的所有人脸位置和人脸编码
+        # Find all face positions and face codes in the current frame number
         face_locations = face_recognition.face_locations(output)
         print("Found {} faces in image.".format(len(face_locations)))
         face_encodings = face_recognition.face_encodings(output, face_locations)
 
-        #遍历图片中每一张人脸，看是否为已知人脸
+        # Range every face from frame picture，find known face
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             match = face_recognition.compare_faces([face_encoding], face_encoding)

@@ -53,10 +53,6 @@ def face_recognition(pic_1,pic_2):
 		return 'something wrong and status_code is %s'%r.status_code
 
 
-	
-
-
-
 if __name__ == '__main__':
 	# face_recognition('e:/1.jpg','e:/2.jpg')
 	url1='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519388599421&di=c56873a9a3054b3d964d5f4a77f6835e&imgtype=0&src=http%3A%2F%2Fp8.qhimg.com%2Ft01d5fe9c95c53e0a23.jpg'
