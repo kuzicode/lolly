@@ -1,6 +1,6 @@
 ### lolly
 face_recognition project from https://github.com/ageitgey/face_recognition  
-raspberrypi + dlib + python     
+raspberrypi + dlib + python3     
 
 ### Progress
 1.信息采集阶段----拍照，并预览。照片满意就保存，不满意就舍弃。(将图片放到指定文件夹)  
@@ -9,6 +9,6 @@ raspberrypi + dlib + python
 ### Environmental construction
 [Raspberrypi linux环境搭建过程](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
 
-### Run
-$ cd CML/  
+### Run！
+$ cd CML 
 $ python3 face_recognition_on_raspi.py  
