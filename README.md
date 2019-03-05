@@ -1,5 +1,5 @@
 ### lolly
-face_recognition project from https://github.com/ageitgey/face_recognition  
+简单的人脸识别程序 from https://github.com/ageitgey/face_recognition  
 raspberrypi + dlib + python3     
 
 ### Progress
