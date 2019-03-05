@@ -6,7 +6,7 @@ raspberrypi + dlib + python3
 1.信息采集阶段: 拍照并预览。照片满意就保存，不满意就舍弃。(将图片放到指定文件夹)  
 2.系统正式开始: 从摄像头截取一张照片，与已存在人脸对比  
 
-### Environmental construction
+### Ready
 [Raspberrypi linux环境搭建过程](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
 
 
