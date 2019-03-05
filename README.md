@@ -10,6 +10,6 @@ raspberrypi + dlib + python3
 [Raspberrypi linux环境搭建过程](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
 
 
-### Run！  
+### Run
   $ cd CML/    
   $ python3 face_recognition_on_raspi.py    
