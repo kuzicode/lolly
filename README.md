@@ -11,5 +11,5 @@ raspberrypi + dlib + python3
 
 
 ### Run
-  $ cd CML/    
+  $ cd lolly/CML/    
   $ python3 face_recognition_on_raspi.py    
