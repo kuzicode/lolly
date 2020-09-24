@@ -41,5 +41,6 @@ try:
                 name =person_name 
 
             print("I see someone named {}!".format(person_name))
+            
 except :
     print("take another picture and try it again")

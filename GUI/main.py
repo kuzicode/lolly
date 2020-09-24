@@ -188,14 +188,6 @@ class FaceRecognition(QWidget,Face_Recognition):
         else:
             return 'something wrong and status_code is %s' % r.status_code
 
-    # def face_compare(self):
-    #     global USER_NAME
-    #
-    #     msg=self.face_recognition('%s.jpg'%USER_NAME,'temp.jpg')
-    #     print(msg)
-    #     self.label.setText(msg)
-
-
 
 if __name__=='__main__':
     app=QApplication(sys.argv)

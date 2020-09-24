@@ -12,7 +12,7 @@
 
 ## Deplory
 
-[Raspberrypi linux环境搭建过程](https://github.com/kumataahh/lolly/blob/master/installations_guide.md)  
+[Raspberrypi linux环境搭建过程](deplory.md)  
 
 
 ## Gettting Started 
