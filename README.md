@@ -1,8 +1,8 @@
 # lolly
 
-基于树莓派的人脸识别项目，作为2019毕业设计的小项目 with [@jackwu](https://github.com/wljgithub)
-Refactor by https://github.com/ageitgey/face_recognition
-raspberrypi + dlib + python3     
+  基于树莓派的人脸识别项目，作为2019毕业设计的小项目 with [@jackwu](https://github.com/wljgithub)
+  Refactor by https://github.com/ageitgey/face_recognition
+  
 
 ## How to work
 1.信息采集阶段: 拍照并预览。照片满意就保存，不满意就舍弃。(将图片放到指定文件夹)  
