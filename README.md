@@ -17,5 +17,5 @@
 
 ## Gettting Started 
 ```
-$python3 face_recognition_on_raspi.py
+$ python3 face_recognition_on_raspi.py
 ```
